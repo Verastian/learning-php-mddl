@@ -1,0 +1,5 @@
+.vscode/
+
+var/www/html/CRUD/config/database.config.php
+
+var/www/html/functions/

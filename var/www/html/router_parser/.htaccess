@@ -1,0 +1,6 @@
+RewriteEngine On
+
+RewriteBase /router_parser/
+
+RewriteRule ^([a-z]+)/([a-z]+)$  index.php?pagina=$1&accion=$2 [QSA]
+RewriteRule ^([a-z]+)$  index.php?pagina=$1 [QSA]

@@ -1,0 +1,108 @@
+:root {
+  --primary-bg-color: rgb(5, 5, 20);
+  --container-bg-color: #eaeaea;
+  --border-color: black;
+  --button-border-color: black;
+  --button-hover-color: rgb(110, 214, 100);
+  --list-item-bg-color: #cecbcb;
+  --list-item-hover-color: rgb(175, 166, 166);
+  --button-delete-bg-color: black;
+  --button-delete-hover-color: rgb(168, 15, 15);
+  --input-bg-color: #cecbcb;
+  --input-focus-bg-color: #eaeaea;
+  --button-clear-color: rgb(168, 15, 15);
+  --button-clear-bg-color: #eaeaea;
+  --button-clear-border-color: rgb(168, 15, 15);
+  --button-clear-hover-color: #eaeaea;
+  --button-clear-hover-bg-color: rgb(168, 15, 15);
+}
+
+body {
+  background: none;
+}
+
+.container {
+  background: var(--container-bg-color);
+  max-width: 400px;
+  margin: auto;
+  padding: 10px 20px;
+}
+
+.header {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.titulo {
+  text-align: center;
+}
+
+.boton-agregar {
+  display: block;
+  margin: auto;
+  margin-top: -15px;
+  padding: 4px 10px;
+  font-weight: bold;
+  border: 3px solid var(--button-border-color);
+}
+
+.boton-agregar:hover {
+  background: var(--button-hover-color);
+}
+
+.lista-tareas {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-tareas li {
+  margin: 10px 0;
+  background: var(--list-item-bg-color);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lista-tareas li:hover {
+  background: var(--list-item-hover-color);
+}
+
+.boton-eliminar {
+  background: var(--button-delete-bg-color);
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+.boton-eliminar:hover {
+  background: var(--button-delete-hover-color);
+}
+
+.input-tarea {
+  border: none;
+  background: var(--input-bg-color);
+  padding: 4px;
+  width: 100%;
+  outline: none;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+.input-tarea:focus {
+  background: var(--input-focus-bg-color);
+}
+
+.boton-limpiar {
+  display: block;
+  margin: auto;
+  margin-right: 0;
+  padding: 4px 10px;
+  font-weight: bold;
+  color: var(--button-clear-color);
+  border: 2px solid var(--button-clear-border-color);
+  background: var(--button-clear-bg-color);
+}
+
+.boton-limpiar:hover {
+  color: var(--button-clear-hover-color);
+  background: var(--button-clear-hover-bg-color);
+}
